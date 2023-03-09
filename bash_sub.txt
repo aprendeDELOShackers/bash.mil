@@ -1,0 +1,4 @@
+#Sacar subdomain con "curl" y typer con programacion bash
+
+curl -s "https://crt.sh/?q=.mil" | grep .mil | tr 'B' '\n' | tr 'R>\/<TD\/' ' ' | xargs -I @ echo @ 
+| sort -u | anew | tee sub_.mil.txt
